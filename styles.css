@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+.page-header {
+  background-color: #000;
+  height: 80px;
+  padding: 1em;
+  color: #fff;
+  margin: 5px;
+}
+
+.hero {
+  background-color: green;
+  height: 300px;
+  color: #fff;
+  margin: 5px;
+}
+
+.columns {
+  display: flex;
+}
+
+.col {
+  height: 200px;
+  padding: 1em;
+  width: 33.33%;
+  background-color: yellow;
+  margin: 5px;
+}
