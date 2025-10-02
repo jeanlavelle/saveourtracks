@@ -1,19 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">     
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Challenge 1</title>
-  <link rel="stylesheet" href="styles.css"> <!-- must be the last css style sheet -->
+  <title>Save Our Tracks</title> 
+  <meta name="author" content="Jean Lavelle">
+  <meta name="description" content="Educational website the closure of four-wheel-drive tracks in Australia and how to save them from closure">
+  <meta name="keywords" content="camping, four-wheel-drive cars, Australian bush, nature, outdoors, communities, educational">
+  <link rel="stylesheet" href="styles.css"> <!-- must be the last css style sheet -->         
+  <link rel="icon" href="images/logo.png">
+   
 </head>
 <body>
-  <header class="page-header">HEADER</header>
-  <div class="hero">hero</div>
-  <div class="columns">
-    <div class="col">COLUMN 1</div>
-    <div class="col">COLUMN 2</div>
-    <div class="col">COLUMN 3</div>
-  </div>
+  <header>
+   
+    <!-- SCROLL AND PROGRESS INDICATOR -->
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="mybar"></div>
+      </div>
+    </div>
+    
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <div class="logo"> <!-- clickable logo to navigate back home -->
+        <a href="#home"><img src="images/logo.png" height="50" alt="Save Our Tracks logo"></a>
+      </div>
+      <a href="#backstory">Backstory</a> <!-- links for navigation -->
+      <a href="#howtohelp">How to help</a>
+      <a href="#communities">Communities</a>
+      <a href="#tipsntricks">Tips 'n tricks</a>
+      <a href="#faqs">FAQ's</a>
+    </nav>
+  </header>
+    <!-- HOME SECTION -->
+    <section id="home"> 
+        <h1>
+          <span class="title">Save Our</span>
+          <span class="titletwo">Tracks</span>
+        </h1>
+
+        <div class="downarrow"> 
+          <img src="images/2-arrow-down.png" alt="Scroll down arrow"> <!-- arrow icon -->
+        </div> 
+    </section>
+    <!-- Main Content -->
+    <main>
+      <!-- ****** BACKSTORY ***** -->
+      <section id="backstory">
+          <!-- title -->
+          <h2 class="dangertitle">Our tracks are in danger</h2>
+          
+          <!-- content -->
+          <div class="content1">
+            <div class="text1">
+              <p class="para1">Four-wheel drive (4WD) tracks around Australia are consistently being closed to the public, with a large and 
+                growing population of Australian's and tourists alike being locked out of exploring the natural landscape.</p>
+              <p class="para2">Tracks experience closures when there is an increase in damage to the natural landscape, this includes;</p>
+              
+              <!-- unordered list -->
+              <ul class="list1"> 
+                <li>Rubbish and waste being left behind or dumped</li>
+                <li>Visitors incorrectly doing their business in the bush</li>
+                <li>Cars veering off tracks and driving over vegetation</li>
+                <li>Visitors camping in non-designated areas</li>
+                <li>Irresponsible driving such as speeding and doughnuts</li>
+                <li>Vehicles becoming stuck and needing rescue due to incapable vehicles and drivers</li>
+                <li>On track damage
+                  <ul class="sublist1">
+                    <li>spinning wheels while stuck, speeding and irresponsible driving</li>
+                  </ul>
+                </li>
+                <li>Damage done during winter months and rainy seasons</li>
+                <li>The cutting down of trees</li>
+                <li>Incorrectly extinguishing fires</li>
+              </ul> 
+            </div>
+
+            <!-- image -->
+            <div class="image1">
+              <img src="images/img1.png" alt="four-wheel-drive track on a red dirt track in the outback of Australia">
+            </div>
+          </div>
+
+        <!-- next page title-->
+        <h2 class="actionsconsequences">Actions have consequences</h2>
+
+        <!-- next page content-->
+        <div class="content2">
+          <div class="img2">
+            <img src="images/img2.png" alt="view of Australian bush fire from tree tops">
+          </div>
+          <div class="text2">
+            <p class="para3">Eco-tourism experiences a large and negative impact when four-wheel driving tracks are closed to the public 
+              and to four-wheel driving activities as tourists often use these tracks to travel to scenic destinations that allow them to 
+              witness Australia's wildlife and its natural beauty. These closures result in a reduction in tourism activities in the area 
+              which in turn negatively impacts the local economy as tour operators and accommodation facilities experience a significant 
+              decrease in tourists, causing the area to develop higher levels of unemployment.</p>
+          </div>
+        </div>
+
+        <!-- next line of content-->
+        <div class="content3">
+          <div class="text3">
+            <p class="para4">People who have been driving four-wheel drive tracks for over a decade can see their closure, even if the 
+              track is mostly made of rock like the Pipeline Track in Lithgow New South Wales. This type of track experiences minuscule 
+              changes and damages to it due to it being this type of terrain, which goes against the argument of four-wheel drive vehicles 
+              destroying the environment as there is a lack of evidence, particularly with this specific track. The Pipeline track is an 
+              integral part of many four-wheel drive enthusiast with Four Wheel Drive New South Wales & Australian Capital Territory, also
+               known as 4WD NOW, being a key member from groups that use the area.</p>
+          </div>
+          <!-- image -->
+          <div class="img3">
+            <img src="images/img3.png" alt="a lone car towing a caravan along a cliff side track in the Australian bush">
+          </div>
+        </div>
+      </section>
+      
+      <!-- ***** HOW TO HELP ****** -->
+      <section id="howtohelp">
+           <!-- title -->
+           <h2 class="helptitle">How to help</h2>
+            
+            <p class="helpblurb">There are effective measures that can be taken to limit the damage of the over use of 4WD tracks.</p>
+            <p class="helpblurb2">There is a balance that can be achieved between conserving the environment and allowing the community 
+            of 4WD enthusiasts to participate in driving, camping and that particular lifestyle.</p>
+          
+           <!-- content -->
+            <!-- 1. PERMIT SYSTEMS-->
+            <div class="content4">
+              <!-- content -->
+              <h3 class="permit">1. Permit systems</h3>
+              <div class="text4">
+               <p class="para5">Visitors are required to obtains a permit before entering the area, which is also effective in limiting 
+                the number of vehicles on a track at one time. Permit systems help to keep people accountable of damage through the limited 
+                number of people and vehicles permitted to go through during specific dates, with rangers and authorities patrolling the 
+                area and capable of tracking down who is in the area at any particular time.</p>
+              </div>
+              <!-- image -->
+              <div class="img4">
+                <img src="images/img4.png" alt="a group of people hiking in a deep valley with trees and high rocks">
+              </div>
+            </div>
+
+          <!-- 2. IMPROVED INFRASTRUCTURE -->
+            <div class="content5">
+              <!-- image -->
+              <div class="img5">
+                <img src="images/img5.png" alt="red road sign along a dirt track saying 'warning no fuel for 500km' with a green sign below it saying 'Tablelands Hwy'">
+              </div>
+              <!-- content -->
+              <h3 class="infrastructure">2. Improved infrastructure</h3>
+              <div class="text5">
+                <p class="para6">Improved track infrastructure includes;</p>
+              <!-- unordered list -->
+                <ul class="list2"> 
+                  <li><span class="bold">More efficient</span> drainage to prevent large mud puddles and tire wash out markings</li>
+                  <li><span class="bold">Installing signs</span> to inform drivers how to responsibly drive obstacles or tracks</li>
+                  <li><span class="bold">Placing markers to guide</span> drivers to stay on tracks rather than veer off and make their own</li>
+                  <li><span class="bold">Implementing education</span> and awareness programs to educate visitors on the importance of protecting the environment</li>
+                </ul> 
+                <p class="para7">These methods of reducing the impact of vehicles on the environment are effective in both allowing 
+                  visitors to see the sights and wonders of the Australian bush, improving the local economy and Eco-tourism, as well 
+                  as protecting the environment the surrounds the 4WD track.</p>
+              </div>
+            </div>
+
+          <!-- 3. SEASONAL CLOSURES -->
+            <!-- content -->
+            <div class="content6">
+              <h3 class="seasonal">3. Seasonal closures</h3>
+              <div class="text6">
+                <p class="para8">The state of Victoria manage their 4WD tracks through seasonal closures and regular maintenance allowing 
+                4WDers to drive the tracks in the correct season and closing the tracks during the winter months. </p>
+                <p class="para9">Tracks are more prone to vehicles damaging the ground in winter months due to the increased mud and water 
+                  puddles that increase the difficulty of the track and the likelihood of vehicles becoming stuck.</p>
+              </div>
+              <!-- image -->
+              <div class="img6">
+                <img src="images/img6.png" alt="one long dirt track with one car towing a camper trailer, track has many mud holes spaced out down the middle and is surrounded by shrub forrest">
+              </div>
+            </div>
+          
+          <!-- 4. CONTROLLED CHALLENGE -->
+            <div class="content7">
+              <!-- image -->
+              <div class="img7">
+                <img src="" alt=""><!-- /////////////INSERT IMAGE////////////////// -->
+              </div>
+              <!-- content -->
+              <h3 class="challenge">4. Controlled challenge</h3>
+              <div class="text7">
+                <p class="para10">The track begins with a deliberately challenging obstacle designed to deter vehicles and drivers without
+                  sufficient off-road experience or capability. This ensures that only properly equipped and skilled 4WDs proceed, reducing 
+                  the risk of vehicles getting stuck or causing accidents further along the track</p><!-- ///////////EDIT TEXT////////// -->
+              </div>
+            </div>
+          
+          <!-- 5. MONITORING AND ENFORCEMENT -->
+            <div class="content8">
+              <!-- content -->
+              <h3 class="monitoring">5. Monitoring and enforcement</h3>
+              <div class="text8">
+                <p class="para11">text about how to monitor and enforce rules and the benefits</p><!-- ///////////EDIT TEXT////////// -->
+              </div>
+              <!-- image -->
+              <div class="img8">
+                <img src="" alt=""><!-- /////////////INSERT IMAGE////////////////// -->
+              </div>
+            </div>
+           
+
+          <!-- WHAT YOU CAN DO -->
+           <!-- title -->
+           <h2 class="whatdo">What you can do</h2>
+            
+           <p class="whatdoblurb">The public can participate in easy and basic ways of taking care of four-wheel drive tracks through 
+            collecting their own and any waste on the site, taking care of tracks through responsible and careful driving, and coming 
+            together as a community to keep tracks clean, tidy and prevent their damage.</p>
+         
+          <!-- content -->
+           <!-- 1. RUBBISH-->
+           <div class="content9">
+             <!-- content -->
+             <h3 class="permit">1. Rubbish</h3>
+             <div class="text9">
+              <p class="para12">Bring rubbish bags to keep your rubbish in, and bring an extra one to collect other rubbish you see around.</p>
+              <p class="para13">Leave the area better than you found it.</p>
+              <p class="para14">Leave no trace.</p>
+             </div>
+             <!-- image -->
+             <div class="img9">
+               <img src="images/img9.png" alt="looking through the large opening of a cave onto the australian desert with bushes and a sunrise, with a sun flare on the camera lense">
+             </div>
+           </div>
+
+         <!-- 2. STICK TO THE TRACKS -->
+           <div class="content10">
+             <!-- image -->
+             <div class="img10">
+               <img src="images/img10.png" alt="birds eye view of a single car on a straight red dirt road going through short scrub bushes">
+             </div>
+             <!-- content -->
+             <h3 class="sticktracks">2. Stick to the tracks</h3>
+             <div class="text10">
+               <p class="para15">Follow the tracks already clearly made and do not veer off for any reason (unless it's an emergency of 
+                course).</p>
+               <p class="para16">You help the environment and wildlife by sticking to tracks by maintaining fire breaks and allowing the 
+                surrounding vegetation to thrive.</p>
+             </div>
+            </div>
+
+          <!-- 3. KEEP YOUR MATES IN CHECK -->
+           <div class="content11">
+            <!-- content -->
+            <h3 class="matescheck">3. Keep your mates in check</h3>
+            <div class="text11">
+              <p class="para17">If you see your mates (or anyone else) driving irresponsibly, littering, veering off track or doing 
+                anything other damaging activities - call them out!</p>
+              <p class="para18">Whether they just don't know the impact or if they dont care, the only way we can fight the closure of 
+                tracks is by doing it together and holding each other accountable.</p>
+            </div>
+            <!-- image -->
+            <div class="img11">
+              <img src="images/img11.png" alt="back of a car view, its driving quickly towards mountains along a dirt track, flicking up lots of red dirt">
+            </div>
+           </div>
+
+          <!-- 4. GET THE GO-AHEAD -->
+          <div class="content12">
+            <!-- content -->
+            <h3 class="goahead">4. Get the go-ahead</h3>
+            <div class="text12">
+              <p class="para19">text about getting permission to camp or drive on certain sites and being respectful of 
+                landowners</p><!-- ///////////EDIT TEXT////////// -->
+            </div>
+            <!-- image -->
+            <div class="img12">
+              <img src="" alt=""><!-- /////////////INSERT IMAGE////////////////// -->
+            </div>
+          </div>
+
+          <!-- 5. LEAVE NO FIRE ALIVE -->
+          <div class="content13">
+            <!-- content -->
+            <h3 class="nofire">5. Leave no fire alive</h3>
+            <div class="text13">
+              <p class="para20">text about making sure fire is fully out and how to do so</p><!-- ///////////EDIT TEXT////////// -->
+            </div>
+            <!-- image -->
+            <div class="img13">
+              <img src="" alt=""><!-- /////////////INSERT IMAGE////////////////// -->
+            </div>
+          </div>
+      </section>
+
+      <!-- ***** COMMUNITIES ***** -->
+      <section id="communities">
+        <!-- title -->
+        <h2 class="communities">Communities you can join</h2>
+        <p class="communitiesblurb">Whether you're new to the scene or a dinosaur, there are plenty of clubs to join around Australia.</p>
+        <p class="communitiesblurb2">Joining a club has many benefits! Each club throw their own special events, have different 
+          accessibility perks, vary in social scene, and more (some even have car exclusivity!) - there's a club for every kind of 4WD 
+          enthusiast.</p>
+
+        <!-- content -->
+        <!-- FREE TO JOIN -->
+         <section id="freetojoin">
+          <h3 class="freetojoin">Free to join</h3>
+
+          <!-- out and about section -->
+          <article class="outabout">
+            <img src="images/outnabout4x4club.png" alt="Out and About 4x4 Club photo with multiple four-wheel-drive cars lined up in the red dirt desert">
+            <h4 class="h41">Out and About 4x4 Club Inc.</h4>
+            <p class="para21">20 years old - not a hard core 4wd Club that seeks out the most difficult tracks to conquer, more about enjoying our four-wheel 
+              driving in a safe fun and responsible manner.</p>
+            <a href="#">more</a> <!-- ///////LINK TO WEBSITE///////-->
+          </article>
+
+          <!-- south side section -->
+           <article class="southside">
+            <img src="images/southside4wdgroup.png" alt="multiple 4wd cars lined up in the Australian outback with small green shrubs and red gravel ground">
+            <h4 class="h42">South Side 4WD Group</h4>
+            <p class="para22">Social Facebook group posting 4WD news, organizing trips for members and promoting good 4WD practices.</p>
+            <a href="#">more</a><!-- ///////LINK TO WEBSITE///////-->
+           </article>
+
+          <!-- ///////INSERT FREE CLUB HERE///////-->
+            <article class="">
+              <img src="" alt="">
+              <h4 class="h43">INSERT FREE CLUB NAME HERE</h4>
+              <p class="para23">PARAGRAPH ABOUT THE CLUB</p>
+              <a href="#">more</a><!-- ///////LINK TO WEBSITE/////-->
+            </article>
+          
+          <!-- ///////INSERT FREE CLUB HERE///////-->
+            <article class="">
+              <img src="" alt="">
+              <h4 class="h44">INSERT CLUB NAME HERE</h4>
+              <p class="para24">PARAGRAPH ABOUT CLUB</p>
+              <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+            </article>
+
+          <!-- carousel controls (PLACEHOLDERS)-->
+           <nav class="carousel1">
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+           </nav>
+         </section>
+
+        <!-- ANNUAL FEES -->
+         <section id="annualfees">
+          <h3 class="annualfees">Annual fees</h3>
+
+          <!-- freedom awd club wa -->
+          <article class="freedom">
+            <img src="images/freedomawdclub.png" alt="a line of cars going around the bend in a red dirt track with trees lining the sides">
+            <h4 class="h45">Freedom AWD Club WA</h4>
+            <p class="para25">Established in 2012 by three friends from the love of the outdoors and nature, the club is inclusive of AWD and 4WD vehicles and 
+              participates in varying activities.</p>
+            <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+          </article>
+
+          <!-- albany 4wd club -->
+          <article class="albany">
+            <img src="images/albany4wdclub.png" alt="a road sign for the northern territory covered in stickers with a 4wd car either side of it on a red dirt road">
+            <h4 class="h46">Albany 4WD Club</h4>
+            <p class="para26">Caters to all types of 4WDs and skill levels with organized training days and trips - insured and affiliated with WA 4WD Association.</p>
+            <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+          </article>
+
+          <!-- carousel controls (PLACEHOLDER) -->
+           <nav class="carousel2">
+            <button>BUTTON</button>
+            <button>BUTTON</button>
+           </nav>
+         </section>
+       
+
+      </section>
+
+      <!-- ***** TIPS 'N TRICKS ***** -->
+      <section id="tipsntricks">
+        <!-- title -->
+        <h2 class="tipsntricks">Tips 'n tricks</h2>
+        <p class="tipsblurb">With such a large population in this hobby there are bound to be a few bad actors, but with good ones 
+          (like you!) we can change the tide on the closure of 4WD tracks and some of the negative opinions that have been formed.</p>
+        <p class="tipsblurb2">There's plenty to learn if you're just starting out and even if you think you might be an expert, 
+          that's all part of the beauty and charm of the scene.</p>
+      
+        <!-- content -->
+        <!-- ESSENTIALS -->
+        <section class="essentials">
+          <div class="slidercontainer">
+            <div class="slideactive" style="background-image: url(images/ca1.png);">
+              
+              <div class="overlay">
+                
+                <h3 class="slidetitle">Essentials</h3>
+
+                <div class="tagbox1">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="#" class="infolink1">What to do before a trip</a>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TIPS N TRICKS-->
+        <section class="tipsntricksslider">
+          <div class="slidercontainer">
+            <div class="slideactive" style="background-image: url(images/cb1.png);">
+              
+              <div class="overlay">
+               
+                <h3 class="slidetitle">Tips 'n tricks</h3>
+
+                <div class="tagbox1">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="#" class="infolink1">How to never get bogged</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- ***** FAQ'S ***** -->
+      <section id="faqs">
+        <!-- title -->
+         <h2 class="faqs">Frequently Asked Questions</h2>
+        
+        <!-- content -->
+        <!-- SEARCH BAR -->
+        <div class="searchcontainer">
+          
+          <form role="search">
+            <label for="search" class="hidden">Search Questions</label>
+            <input
+            type="search"
+            id="search"
+            placeholder="Quickly search your questions here"
+            class="searchinput"
+            >
+
+            <img src="images/search.png" alt="magnifying glass to signal a search icon" class="searchimg">
+          </form>
+
+        </div>
+
+        <!-- FAQ GRID -->
+        <div class="faqgrid">
+
+          <!-- 4wd accessories -->
+          <a href="#" class="faqcard" style="background-image: url(images/4wdaccessories.png);">
+            <span class="cardlabel">4WD Accessories</span>
+          </a>
+
+          <!-- 4wd mods -->
+          <a href="#" class="faqcard" style="background-image: url(images/4wdmods.png);">
+            <span class="cardlabel">4WD Modifications and Laws</span>
+          </a>
+
+          <!-- tire pressures -->
+          <a href="#" class="faqcard" style="background-image: url(images/tirepressures.png);">
+            <span class="cardlabel">Everything Tire Pressures</span>
+          </a>
+
+          <!-- encouraging others to do good -->
+          <a href="#" class="faqcard" style="background-image: url(images/dogood.png);">
+            <span class="cardlabel">Ecouraging Others to Do Good</span>
+          </a>
+
+          <!-- key players to contact -->
+          <a href="#" class="faqcard" style="background-image: url(images/keyplayers.png);">
+            <span class="cardlabel">Key Players to Contact</span>
+          </a>
+          
+          <!-- 4wding and the environment -->
+          <a href="#" class="faqcard" style="background-image: url(images/4wdingandenvironment.png);">
+            <span class="cardlabel">4WDing and the Environment</span>
+          </a>
+
+          <!-- holding bad actors accountable -->
+          <a href="#" class="faqcard" style="background-image: url(images/badactors.png);">
+            <span class="cardlabel">Holding Bad Actors Accountable</span>
+          </a>
+
+          <!-- everything fire safety-->
+          <a href="#" class="faqcard" style="background-image: url(images/firesafety.png);">
+            <span class="cardlabel">Everything Fire Safety</span>
+          </a>
+
+          <!-- supporting local economies -->
+          <a href="#" class="faqcard" style="background-image: url(images/localeconomies.png);">
+            <span class="cardlabel">Supporting Local Economies</span>
+          </a>
+
+          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
+          <a href="#" class="faqcard" style="background-image: url();">
+            <span class="cardlabel">CARD LABEL HERE</span>
+          </a>
+
+          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
+          <a href="#" class="faqcard" style="background-image: url();">
+            <span class="cardlabel">CARD LABEL HERE</span>
+          </a>
+
+          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
+          <a href="#" class="faqcard" style="background-image: url();">
+            <span class="cardlabel">CARD LABEL HERE</span>
+          </a>
+
+        </div>
+      </section>
+      
+  </main>
+  
+  <!-- back to top arrow -->
+  <a href="#home" class="back-to-top">
+    <img src="images/up-arrow.png" alt="arrow pointing up that leads back to the top of the page">
+  </a>
+
+  <!-- script -->
   <script src="main.js"></script> <!-- this must be the last script for things to work -->
 </body>
 </html>
