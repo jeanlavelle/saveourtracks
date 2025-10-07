@@ -1,9 +1,4 @@
-/* main content */
-main {
-  width: 90%; /* readable margins on each side */
-  max-width: 1200px; /* prevent overlay wide text */
-  margin: 0 auto; /* center main content area */
-}
+
 
 
 /* PROGRESS BAR */
@@ -25,91 +20,84 @@ sl-progress-bar { /* target shoelace component directly */
 /* ***** TIPS 'N TRICKS ***** */
 /* entire section */
 #tipsntricks {
-  width: 100vw !important; /* full viewport width */
-  margin-left: calc(50% - 50vw); /* break out of main width limit */
+  width: 100vw !important; /* force full width of screen */
+  margin-left: calc(50% - 50vw); /* align edges */
   display: block;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 /* wrapping sections */
 .essentials, .tipsntricksslider {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: relative;
   display: block;
+  overflow: hidden;
 }
 /* shoelace image carousel */
 sl-carousel {
-  width: 100%;
-  height: 480px; /* fixed height for desktop */
-  --aspect-ratio: 16/9; /* ensure this ratio is maintained */
-  margin: 20px 0px; /* vertical spacing */
+  width: 100%; /* full width of parent */
+  height: 520px; /* fixed height for desktop */
   display: block; /* behave like a block element */
-  border-radius: 6px;
-  overflow: hidden; /* stops child elements from overflowing */
+  position: relative;
+  overflow: hidden;
 }
 /* individual slides */
 sl-carousel-item {
-  position: relative; /* lets overlay be positioned inside */
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* tagbox and text alignment */
+}
+.slide {
+  position: relative;
 }
 [class*="slide"] { /* styling for background image slides */
-  position: relative; /* for absolute overlay placement */
-  background-size: cover; /* fill entire area and maintain ratio */
+  position: relative; 
+  background-size: cover; /* fill entire area and don't distort */
   background-position: center; 
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
-/* overlay and tint */
-.overlay {
-  z-index: 5; /* always appear above image */
-  position: absolute;
-  inset: 0; /* top, right, bottom and left */
-  background: linear-gradient(to top, #00000073 15%, #00000033 50%, #0000000d 85%); /* gradient colouring and style */
-  display: flex; /* content alignemnt inside overlay */
-  flex-direction: column; /* stack title and tagbox */
-  justify-content: flex-end; /* pushes content to bottom of slide */
-  padding: 40px; /* spacing around overlay content */
-  color: #f5f2ed; /* text colour */
-  box-sizing: border-box; /* include padding element width */
-  text-align: left;
-}
 /* titles */
 .slidetitle {
-  text-align: center;
-  font-size: 40px;
+  position: absolute; /* placed on top of image */
+  top: 20%; /* distance from top of slide */
+  left: 50%; /* horizontally centred */
+  transform: translateX(-50%); /* perfectly centered */
+  font-size: 42px;
   font-weight: 700; /* bold for hierarchy */
   text-shadow: 1px 1px 3px #948477;
   color: #f5f2ed;
-  margin: 0px 0px 15px 0px; /* title space */
-}
-.slidetitle, [class*="tagbox"] {
-  z-index: 6; /* text and tagbox sit above overlay */
-  position: relative;
+  z-index: 5; /* appears above image */
+  text-align: center;
 }
 /* tagboxes */
 [class*="tagbox"] {
-  display: inline-flex; /* horizontally aligned text and icon */
+  position: absolute; /* over image */
+  bottom: 25px; 
+  right: 40px;
+  display: inline-flex; /* horizontally align text and icon */
   align-items: center; /* vertically center text and icon */
   background-color: #f5f2ed;
   color: #44301e;
   padding: 10px 18px; /* internal spacing */
   border-radius: 8px; /* rounded corners */
   font-weight: 600; /* semi bold */
+  font-size: 16px;
   box-shadow: 0px 2px 5px #00000033;
+  z-index: 5;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* hover animation */
+  justify-content: center;
 }
 [class*="tagbox"]:hover { /* hover interactivity */
   transform: translateY(-3px); /* lifts box */
-  box-shadow: 0px 4px 10px #00000040;
+  box-shadow: 0px 4px 10px #00000040; /* darker shadow */
 }
 [class*="plusicon"] { /* plus icon image in tagbox */
   width: 20px;
   height: 20px;
-  object-fit: contain; /* let image scale with distorting */
+  object-fit: contain; /* let image scale without distorting */
   margin-right: 10px; /* space between icon and text */
-  display: inline-block;
-  vertical-align: middle; /* keeps icon algined with text baseline */
 }
 [class*="infolink"] { /* tagbox link */
   color: #44301e;
@@ -120,25 +108,29 @@ sl-carousel-item {
   text-decoration: underline; 
 }
 /* navigation arrow styling */
-sl-carousel::part(navigation-button) {
-  color: #f5f2ed; /* arrows */
+sl-carousel::part(navigation-button) { /* shoelace navigation */
+  color: #f5f2ed; /* arrow colour */
   width: 42px;
   height: 42px;
   font-size: 18px;
   transition: background-color 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
 }
 sl-carousel::part(navigation-button):hover {
   background-color: #b23a25; /* darker hover */
 }
-sl-carousel::part(navigation-button--next) {
-  right: 20px; /* move arrow in from edge */
-}
-sl-carousel::part(navigation-button--previous) {
-  left: 20px; /* move arrow in from edge */
-}
 /* pagination styling */
 sl-carousel::part(pagination) {
-  margin-bottom: 10px; /* positioning dots closer to bottom */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  bottom: 15px; /* positioning dots to bottom */
+  pointer-events: none;
 }
 sl-carousel::part(pagination-item) {
   background-color: #E2DDD8; /* inactive dot */
@@ -167,6 +159,12 @@ sl-carousel::part(pagination-item--active) {
   }
   .slidetitle {
     font-size: 25px; /* smaller heading */
+  }
+  [class*="tagbox"] {
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
   }
   [class*="plusicon"] { /* scaling icon down */
     width: 16px;

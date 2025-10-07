@@ -7,13 +7,8 @@
   <meta name="author" content="Jean Lavelle">
   <meta name="description" content="Educational website the closure of four-wheel-drive tracks in Australia and how to save them from closure">
   <meta name="keywords" content="camping, four-wheel-drive cars, Australian bush, nature, outdoors, communities, educational">
-  
   <!-- shoelace component css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" /> 
-  
-  <!-- showlace component Javascript -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script> 
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"> 
   <!-- must be the last css style sheet in order for others to work -->  
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png">
@@ -415,7 +410,7 @@
       </section>
 
       <!-- ***** TIPS 'N TRICKS ***** -->
-      <section id="tipsntricks">
+      <section id="tipsntricks" class="fullbleed">
         <!-- title -->
         <h2 class="tipsntricks">Tips 'n tricks</h2>
         <p class="tipsblurb">With such a large population in this hobby there are bound to be a few bad actors, but with good ones 
@@ -426,44 +421,38 @@
         <!-- content -->
         <!-- ESSENTIALS -->
         <section class="essentials">
-          <sl-carousel pagination navigation loop style="--aspect-ratio:16 / 9;"> <!-- shoelace carousel -->
+          <sl-carousel pagination navigation loop> <!-- shoelace carousel -->
 
           <!-- slide one -->
           <sl-carousel-item> <!-- shoelace carousel individual items -->
             <div class="slide" style="background-image: url(images/ca1.png);">
-              <div class="overlay">
                 <h3 class="slidetitle">Essentials</h3>
                 <div class="tagbox1a">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon1a">
                   <a href="https://www.elitetune.com.au/guide-to-prepare-your-4x4-for-an-off-road-trip/" class="infolink1a">What to do before a trip</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
 
           <!-- slide two -->
           <sl-carousel-item>
             <div class="slide" style="background-image: url(images/must-haves.png);"> 
-              <div class="overlay">
                 <h3 class="slidetitle">Essentials</h3>
                 <div class="tagbox2a">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon2a">
                   <a href="https://roughasguts.com.au/guides/4wd-packing-list/" class="infolink2a">Must-haves on your packing list</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
 
           <!-- slide three-->
           <sl-carousel-item>
             <div class="slide" style="background-image: url(images/4wdlesson.png);">
-              <div class="overlay">
                 <h3 class="slidetitle">Essentials</h3>
                 <div class="tagbox3a">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon3a">
                   <a href="https://total4x4.com.au/4wd-training-course/" class="infolink3a">Why you should complete a 4wding course</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
 
@@ -472,48 +461,42 @@
 
         <!-- TIPS N TRICKS-->
         <section class="tipsntricksslider">
-          <sl-carousel pagination navigation loop style="--aspect-ratio:16 / 9;"> <!-- shoelace carousel -->
+          <sl-carousel pagination navigation loop> <!-- shoelace carousel -->
            
           <!-- slide one -->
           <sl-carousel-item> <!-- shoelace carousel individual item -->
-            <div class="slideactive" style="background-image: url(images/cb1.png);">
-              <div class="overlay">
+            <div class="slide" style="background-image: url(images/cb1.png);">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
                 <div class="tagbox1b">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon1b">
                   <a href="https://www.youtube.com/watch?v=HJdaZd9WX3Y" class="infolink1b">How to never get bogged</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
 
           <!-- slide two -->
           <sl-carousel-item>
             <div class="slide" style="background-image: url(images/bellswhistles.png);">
-              <div class="overlay">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
                 <div class="tagbox2b">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon2b">
                   <a href="https://mr4x4.com.au/essential-4x4-mods-and-camping-gear-you-actually-need/" class="infolink2b">You don't need all the bells and whistles</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
           
           <!-- slide three-->
           <sl-carousel-item>
-            <div class="slide" style="background-image: url(images/buddysystem.png);"> 
-              <div class="overlay">
+            <div class="slide" style="background-image: url(images/buddysystem.png);">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
                 <div class="tagbox3b">
                   <img src="images/more.png" alt="plus icon in box" class="plusicon3b">
                   <a href="https://www.snowys.com.au/blog/convoy-etiquette-and-safety-when-4wding/" class="infolink3b">Why buddy systems work</a>
                 </div>
-              </div>
             </div>
           </sl-carousel-item>
         
-        </sl-carousel>
+          </sl-carousel>
         </section>
 
       </section>
@@ -615,6 +598,8 @@
   </a>
 
   <!-- script -->
+    <!-- showlace component Javascript -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script> 
   <script src="main.js"></script> <!-- this must be the last script for things to work -->
 
 </body>
