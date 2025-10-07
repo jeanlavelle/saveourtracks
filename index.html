@@ -7,20 +7,25 @@
   <meta name="author" content="Jean Lavelle">
   <meta name="description" content="Educational website the closure of four-wheel-drive tracks in Australia and how to save them from closure">
   <meta name="keywords" content="camping, four-wheel-drive cars, Australian bush, nature, outdoors, communities, educational">
-  <link rel="stylesheet" href="styles.css"> <!-- must be the last css style sheet -->         
+  
+  <!-- shoelace component css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" /> 
+  
+  <!-- showlace component Javascript -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script> 
+  
+  <!-- must be the last css style sheet in order for others to work -->  
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png">
-   
 </head>
 <body>
   <header>
    
     <!-- SCROLL AND PROGRESS INDICATOR -->
-    <div class="header">
       <div class="progress-container">
-        <div class="progress-bar" id="mybar"></div>
+        <sl-progress-bar id="scroll-progress-bar" value="0"></sl-progress-bar> <!-- shoelace scrolling progress bar -->
       </div>
-    </div>
-    
+  
     <!-- NAVIGATION BAR -->
     <nav>
       <div class="logo"> <!-- clickable logo to navigate back home -->
@@ -293,11 +298,11 @@
             <div class="text13">
               <p class="para20">Always put you campfire out with water, DO NOT bury your embers as they often continue to burn but now 
                 covered in dirt or sand. The next family that camps in that spot may have a little one that discovers the extremely damaging 
-                burning coals with their bare feet. It happens and it's very distressing - please put your fires out with water.</p><!-- ///////////EDIT TEXT////////// -->
+                burning coals with their bare feet. It happens and it's very distressing - please put your fires out with water.</p>
             </div>
             <!-- image -->
             <div class="img13">
-              <img src="images/img13.png" alt="a small campfire surrounded by a small rock circle with a patterned pink rug and a 4wd car in the background"><!-- /////////////INSERT IMAGE////////////////// -->
+              <img src="images/img13.png" alt="a small campfire surrounded by a small rock circle with a patterned pink rug and a 4wd car in the background">
             </div>
           </div>
       </section>
@@ -320,9 +325,9 @@
           <article class="outabout">
             <img src="images/outnabout4x4club.png" alt="Out and About 4x4 Club photo with multiple four-wheel-drive cars lined up in the red dirt desert">
             <h4 class="h41">Out and About 4x4 Club Inc.</h4>
-            <p class="para21">20 years old - not a hard core 4wd Club that seeks out the most difficult tracks to conquer, more about enjoying our four-wheel 
-              driving in a safe fun and responsible manner.</p>
-            <a href="#">more</a> <!-- ///////LINK TO WEBSITE///////-->
+            <p class="para21">20 years old - not a hard core 4wd Club that seeks out the most difficult tracks to conquer, more about 
+              enjoying our four-wheel driving in a safe fun and responsible manner.</p>
+            <a href="https://www.outandabout4x4club.org.au/">more</a>
           </article>
 
           <!-- south side section -->
@@ -330,23 +335,25 @@
             <img src="images/southside4wdgroup.png" alt="multiple 4wd cars lined up in the Australian outback with small green shrubs and red gravel ground">
             <h4 class="h42">South Side 4WD Group</h4>
             <p class="para22">Social Facebook group posting 4WD news, organizing trips for members and promoting good 4WD practices.</p>
-            <a href="#">more</a><!-- ///////LINK TO WEBSITE///////-->
+            <a href="https://www.facebook.com/p/SouthSide-4WD-Group-100070222012763/">more</a>
            </article>
 
-          <!-- ///////INSERT FREE CLUB HERE///////-->
-            <article class="">
-              <img src="" alt="">
-              <h4 class="h43">INSERT FREE CLUB NAME HERE</h4>
-              <p class="para23">PARAGRAPH ABOUT THE CLUB</p>
-              <a href="#">more</a><!-- ///////LINK TO WEBSITE/////-->
+          <!-- 4wd club of wa-->
+            <article class="4wdclubwa">
+              <img src="images/4wdclubofwa.png" alt="dozens of cars lined up in a semi-circle on a sandy beach, most cares have long sticks pointing up in the air from the bull-bar on the 4wds with little orange flags at the top of them">
+              <h4 class="h43">4WD Club of WA</h4>
+              <p class="para23">Established in 1971, this is one of the largest 4wd clubs in Western Australia, they are family oriented, 
+                cater to all 4wd vehicles, and hold a variety of trips and events.</p>
+              <a href="https://4wdclubwa.com.au/">more</a>
             </article>
           
-          <!-- ///////INSERT FREE CLUB HERE///////-->
-            <article class="">
-              <img src="" alt="">
-              <h4 class="h44">INSERT CLUB NAME HERE</h4>
-              <p class="para24">PARAGRAPH ABOUT CLUB</p>
-              <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+          <!-- wa coastal 4x4 -->
+            <article class="wacoastal4x4">
+              <img src="images/wacoastal4x4.png" alt="four 4wd cars grouped together in the bush surrounded by trees, powerlines and red dirt">
+              <h4 class="h44">WA Coastal 4x4</h4>
+              <p class="para24">Western Australian 4x4 group planning and holding car meets, beach cruises, day trips and camping trips 
+                through rsvp's on their Facebook page.</p>
+              <a href="https://www.facebook.com/groups/1559125888398666/about">more</a>
             </article>
 
           <!-- carousel controls (PLACEHOLDERS)-->
@@ -364,17 +371,38 @@
           <article class="freedom">
             <img src="images/freedomawdclub.png" alt="a line of cars going around the bend in a red dirt track with trees lining the sides">
             <h4 class="h45">Freedom AWD Club WA</h4>
-            <p class="para25">Established in 2012 by three friends from the love of the outdoors and nature, the club is inclusive of AWD and 4WD vehicles and 
+            <p class="para25">Established in 2012 by three friends from the love of the outdoors and nature, the club is inclusive 
+              of AWD and 4WD vehicles and 
               participates in varying activities.</p>
-            <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+            <a href="https://www.fawdcwa.com.au/">more</a>
           </article>
 
           <!-- albany 4wd club -->
           <article class="albany">
             <img src="images/albany4wdclub.png" alt="a road sign for the northern territory covered in stickers with a 4wd car either side of it on a red dirt road">
             <h4 class="h46">Albany 4WD Club</h4>
-            <p class="para26">Caters to all types of 4WDs and skill levels with organized training days and trips - insured and affiliated with WA 4WD Association.</p>
-            <a href="#">more</a><!-- ///////LINK TO WEBSITE/////// -->
+            <p class="para26">Caters to all types of 4WDs and skill levels with organized training days and trips - insured and 
+              affiliated with WA 4WD Association.</p>
+            <a href="https://albany4wdclub.com/">more</a>
+          </article>
+
+           <!-- national 4x4 club of australia-->
+           <article class="national4x4">
+            <img src="images/national4x4clubofaus.png" alt="multiple 4wd cars lined up on red dirt amongst green grassy hills">
+            <h4 class="h43">National 4x4 Club of Australia</h4>
+            <p class="para23">Registered club with members across the country promoting responsible 4wd activities, they are 
+              family friendly, and hold regular 
+              events and trips that vary in length, skill and theme.</p>
+            <a href="https://national4x4.com.au/">more</a>
+          </article>
+        
+        <!-- cockburn 4wd club -->
+          <article class="cockburn4wdclub">
+            <img src="images/cockburn4wdclub.png" alt="five 4wds lined up around the bend of a tight dirt track in a forrest">
+            <h4 class="h44">Cockburn 4wd Club</h4>
+            <p class="para24">Family friendly club planning trips for groups of people with similar vehicles and interests, 
+              members do not need to be from Cockburn to join.</p>
+            <a href="https://www.cockburn4wdclub.org.au/home">more</a>
           </article>
 
           <!-- carousel controls (PLACEHOLDER) -->
@@ -383,7 +411,6 @@
             <button>BUTTON</button>
            </nav>
          </section>
-       
 
       </section>
 
@@ -399,40 +426,94 @@
         <!-- content -->
         <!-- ESSENTIALS -->
         <section class="essentials">
-          <div class="slidercontainer">
-            <div class="slideactive" style="background-image: url(images/ca1.png);">
-              
-              <div class="overlay">
-                
-                <h3 class="slidetitle">Essentials</h3>
+          <sl-carousel pagination navigation loop style="--aspect-ratio:16 / 9;"> <!-- shoelace carousel -->
 
-                <div class="tagbox1">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
-                  <a href="#" class="infolink1">What to do before a trip</a>
+          <!-- slide one -->
+          <sl-carousel-item> <!-- shoelace carousel individual items -->
+            <div class="slide" style="background-image: url(images/ca1.png);">
+              <div class="overlay">
+                <h3 class="slidetitle">Essentials</h3>
+                <div class="tagbox1a">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon1a">
+                  <a href="https://www.elitetune.com.au/guide-to-prepare-your-4x4-for-an-off-road-trip/" class="infolink1a">What to do before a trip</a>
                 </div>
-              
               </div>
             </div>
-          </div>
+          </sl-carousel-item>
+
+          <!-- slide two -->
+          <sl-carousel-item>
+            <div class="slide" style="background-image: url(images/must-haves.png);"> 
+              <div class="overlay">
+                <h3 class="slidetitle">Essentials</h3>
+                <div class="tagbox2a">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon2a">
+                  <a href="https://roughasguts.com.au/guides/4wd-packing-list/" class="infolink2a">Must-haves on your packing list</a>
+                </div>
+              </div>
+            </div>
+          </sl-carousel-item>
+
+          <!-- slide three-->
+          <sl-carousel-item>
+            <div class="slide" style="background-image: url(images/4wdlesson.png);">
+              <div class="overlay">
+                <h3 class="slidetitle">Essentials</h3>
+                <div class="tagbox3a">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon3a">
+                  <a href="https://total4x4.com.au/4wd-training-course/" class="infolink3a">Why you should complete a 4wding course</a>
+                </div>
+              </div>
+            </div>
+          </sl-carousel-item>
+
+          </sl-carousel>
         </section>
 
         <!-- TIPS N TRICKS-->
         <section class="tipsntricksslider">
-          <div class="slidercontainer">
+          <sl-carousel pagination navigation loop style="--aspect-ratio:16 / 9;"> <!-- shoelace carousel -->
+           
+          <!-- slide one -->
+          <sl-carousel-item> <!-- shoelace carousel individual item -->
             <div class="slideactive" style="background-image: url(images/cb1.png);">
-              
               <div class="overlay">
-               
                 <h3 class="slidetitle">Tips 'n tricks</h3>
-
-                <div class="tagbox1">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
-                  <a href="#" class="infolink1">How to never get bogged</a>
+                <div class="tagbox1b">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon1b">
+                  <a href="https://www.youtube.com/watch?v=HJdaZd9WX3Y" class="infolink1b">How to never get bogged</a>
                 </div>
-
               </div>
             </div>
-          </div>
+          </sl-carousel-item>
+
+          <!-- slide two -->
+          <sl-carousel-item>
+            <div class="slide" style="background-image: url(images/bellswhistles.png);">
+              <div class="overlay">
+                <h3 class="slidetitle">Tips 'n tricks</h3>
+                <div class="tagbox2b">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon2b">
+                  <a href="https://mr4x4.com.au/essential-4x4-mods-and-camping-gear-you-actually-need/" class="infolink2b">You don't need all the bells and whistles</a>
+                </div>
+              </div>
+            </div>
+          </sl-carousel-item>
+          
+          <!-- slide three-->
+          <sl-carousel-item>
+            <div class="slide" style="background-image: url(images/buddysystem.png);"> 
+              <div class="overlay">
+                <h3 class="slidetitle">Tips 'n tricks</h3>
+                <div class="tagbox3b">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon3b">
+                  <a href="https://www.snowys.com.au/blog/convoy-etiquette-and-safety-when-4wding/" class="infolink3b">Why buddy systems work</a>
+                </div>
+              </div>
+            </div>
+          </sl-carousel-item>
+        
+        </sl-carousel>
         </section>
 
       </section>
@@ -464,63 +545,63 @@
         <div class="faqgrid">
 
           <!-- 4wd accessories -->
-          <a href="#" class="faqcard" style="background-image: url(images/4wdaccessories.png);">
+          <a href="https://www.elitetune.com.au/best-4wd-accessories/" class="faqcard" style="background-image: url(images/4wdaccessories.png);">
             <span class="cardlabel">4WD Accessories</span>
           </a>
 
           <!-- 4wd mods -->
-          <a href="#" class="faqcard" style="background-image: url(images/4wdmods.png);">
-            <span class="cardlabel">4WD Modifications and Laws</span>
+          <a href="https://outbacktravelaustralia.com.au/4wd-mods-general-mods/4wd-modification-legalities/" class="faqcard" style="background-image: url(images/4wdmods.png);">
+            <span class="cardlabel">4WD Modifications<br>and Laws</br></span>
           </a>
 
           <!-- tire pressures -->
-          <a href="#" class="faqcard" style="background-image: url(images/tirepressures.png);">
-            <span class="cardlabel">Everything Tire Pressures</span>
+          <a href="https://www.elitetune.com.au/4wd-tyre-pressure-guide/" class="faqcard" style="background-image: url(images/tirepressures.png);">
+            <span class="cardlabel">Everything<br>Tire Pressures</br></span>
           </a>
 
           <!-- encouraging others to do good -->
-          <a href="#" class="faqcard" style="background-image: url(images/dogood.png);">
-            <span class="cardlabel">Ecouraging Others to Do Good</span>
+          <a href="https://www.4wdingaustralia.com/camping/10-ways-to-make-camping-amazing/" class="faqcard" style="background-image: url(images/dogood.png);">
+            <span class="cardlabel">Ecouraging Others<br>to Do Good</br></span>
           </a>
 
           <!-- key players to contact -->
-          <a href="#" class="faqcard" style="background-image: url(images/keyplayers.png);">
+          <a href="https://hamer4x4.com.au/strategies-to-prevent-australian-4x4-track-closures/" class="faqcard" style="background-image: url(images/keyplayers.png);">
             <span class="cardlabel">Key Players to Contact</span>
           </a>
           
           <!-- 4wding and the environment -->
-          <a href="#" class="faqcard" style="background-image: url(images/4wdingandenvironment.png);">
-            <span class="cardlabel">4WDing and the Environment</span>
+          <a href="https://4wdc.com.au/blogs/4wd-tips/overcoming-the-environmental-impact-of-four-wheel-driving?srsltid=AfmBOorCJzH9EXPcwpR1tSdsCcHuSgbKP8_VMsk-c_DCYe6oCA9D2qWw" class="faqcard" style="background-image: url(images/4wdingandenvironment.png);">
+            <span class="cardlabel">4WDing and the<br>Environment</br></span>
           </a>
 
           <!-- holding bad actors accountable -->
-          <a href="#" class="faqcard" style="background-image: url(images/badactors.png);">
-            <span class="cardlabel">Holding Bad Actors Accountable</span>
+          <a href="https://www.club4x4.com.au/blog/unspoken-4wd-track-rules/" class="faqcard" style="background-image: url(images/badactors.png);">
+            <span class="cardlabel">Holding Bad Actors<br>Accountable</br></span>
           </a>
 
           <!-- everything fire safety-->
-          <a href="#" class="faqcard" style="background-image: url(images/firesafety.png);">
-            <span class="cardlabel">Everything Fire Safety</span>
+          <a href="https://www.environment.sa.gov.au/goodliving/posts/2019/09/being-safe-with-campfires" class="faqcard" style="background-image: url(images/firesafety.png);">
+            <span class="cardlabel">Everything<br>Fire Safety</br></span>
           </a>
 
           <!-- supporting local economies -->
-          <a href="#" class="faqcard" style="background-image: url(images/localeconomies.png);">
-            <span class="cardlabel">Supporting Local Economies</span>
+          <a href="https://www.researchgate.net/publication/47641659_Four_wheel_drive_tourism_and_economic_development_opportunities_for_remote_Australia" class="faqcard" style="background-image: url(images/localeconomies.png);">
+            <span class="cardlabel">Supporting Local<br>Economies</br></span>
           </a>
 
-          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
-          <a href="#" class="faqcard" style="background-image: url();">
-            <span class="cardlabel">CARD LABEL HERE</span>
+          <!-- benefits of 4wding -->
+          <a href="https://www.bridgestone.com.au/learn/bridgestone-insider/4x4/6-reasons-travelling-in-a-4wd-is-better?srsltid=AfmBOopmRDc7szndBos6qnsxiyK-oSS97lDUTt05s_aaZwVuIISOcxY3" class="faqcard" style="background-image: url(images/benefitsof4wding.png);">
+            <span class="cardlabel">Benefits of<br>4wding</br></span>
           </a>
 
-          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
-          <a href="#" class="faqcard" style="background-image: url();">
-            <span class="cardlabel">CARD LABEL HERE</span>
+          <!-- mapping, communication and trip planning -->
+          <a href="https://www.roamingtheoutback.com/2014/08/maps-for-travelling-australia/" class="faqcard" style="background-image: url(images/mappingcommunication.png);">
+            <span class="cardlabel">Mapping, Communication<br>and Trip Planning</br></span>
           </a>
 
-          <!-- ///////INSERT FAQ CARD NAME HERE/////// -->
-          <a href="#" class="faqcard" style="background-image: url();">
-            <span class="cardlabel">CARD LABEL HERE</span>
+          <!-- low-impact driving -->
+          <a href="https://defenderadventure.com.au/when-to-use-low-range/" class="faqcard" style="background-image: url(images/lowimpact.png);">
+            <span class="cardlabel">Low-Impact Driving</span>
           </a>
 
         </div>
@@ -535,5 +616,6 @@
 
   <!-- script -->
   <script src="main.js"></script> <!-- this must be the last script for things to work -->
+
 </body>
 </html>
