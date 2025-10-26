@@ -15,24 +15,24 @@
 </head>
 <body>
   <header>
-   
-    <!-- SCROLL AND PROGRESS INDICATOR -->
-      <div class="progress-container">
-        <sl-progress-bar id="scroll-progress-bar" value="0"></sl-progress-bar> <!-- shoelace scrolling progress bar -->
-      </div>
-  
     <!-- NAVIGATION BAR -->
-    <nav>
-      <div class="logo"> <!-- clickable logo to navigate back home -->
-        <a href="#home"><img src="images/logo.png" height="50" alt="Save Our Tracks logo"></a>
-      </div>
+   <nav>
+    <div class="logo"> <!-- clickable logo to navigate back home -->
+      <a href="#home"><img src="images/logo.png" height="50" alt="Save Our Tracks logo"></a>
+    </div>
       <a href="#backstory">Backstory</a> <!-- links for navigation -->
       <a href="#howtohelp">How to help</a>
       <a href="#communities">Communities</a>
       <a href="#tipsntricks">Tips 'n tricks</a>
       <a href="#faqs">FAQ's</a>
-    </nav>
+  </nav>
+    
+  <!-- SCROLL AND PROGRESS INDICATOR -->
+      <div class="progress-container">
+        <sl-progress-bar id="scroll-progress-bar" value="0"></sl-progress-bar> <!-- shoelace scrolling progress bar -->
+      </div>
   </header>
+
     <!-- HOME SECTION -->
     <section id="home"> 
         <h1>
@@ -44,6 +44,7 @@
           <img src="images/2-arrow-down.png" alt="Scroll down arrow"> <!-- arrow icon -->
         </div> 
     </section>
+    
     <!-- Main Content -->
     <main>
       <!-- ****** BACKSTORY ***** -->
@@ -78,7 +79,7 @@
             </div>
 
             <!-- image -->
-            <div class="image1">
+            <div class="img1">
               <img src="images/img1.png" alt="four-wheel-drive track on a red dirt track in the outback of Australia">
             </div>
           </div>
@@ -225,7 +226,7 @@
            <!-- 1. RUBBISH-->
            <div class="content9">
              <!-- content -->
-             <h3 class="permit">1. Rubbish</h3>
+             <h3 class="rubbish">1. Rubbish</h3>
              <div class="text9">
               <p class="para12">Bring rubbish bags to keep your rubbish in, and bring an extra one to collect other rubbish you see around.</p>
               <p class="para13">Leave the area better than you found it.</p>
@@ -313,104 +314,130 @@
 
         <!-- content -->
         <!-- FREE TO JOIN -->
-         <section id="freetojoin">
+        <section id="freetojoin" class="clubcarousel" data-carousel="free">
           <h3 class="freetojoin">Free to join</h3>
 
-          <!-- out and about section -->
-          <article class="outabout">
-            <img src="images/outnabout4x4club.png" alt="Out and About 4x4 Club photo with multiple four-wheel-drive cars lined up in the red dirt desert">
-            <h4 class="h41">Out and About 4x4 Club Inc.</h4>
-            <p class="para21">20 years old - not a hard core 4wd Club that seeks out the most difficult tracks to conquer, more about 
-              enjoying our four-wheel driving in a safe fun and responsible manner.</p>
-            <a href="https://www.outandabout4x4club.org.au/">more</a>
-          </article>
+          <!-- carousel 1 begins-->
+          <div class="track">
 
-          <!-- south side section -->
-           <article class="southside">
-            <img src="images/southside4wdgroup.png" alt="multiple 4wd cars lined up in the Australian outback with small green shrubs and red gravel ground">
-            <h4 class="h42">South Side 4WD Group</h4>
-            <p class="para22">Social Facebook group posting 4WD news, organizing trips for members and promoting good 4WD practices.</p>
-            <a href="https://www.facebook.com/p/SouthSide-4WD-Group-100070222012763/">more</a>
-           </article>
+            <!-- slide one -->
+            <div class="slide">
 
-          <!-- 4wd club of wa-->
-            <article class="4wdclubwa">
-              <img src="images/4wdclubofwa.png" alt="dozens of cars lined up in a semi-circle on a sandy beach, most cares have long sticks pointing up in the air from the bull-bar on the 4wds with little orange flags at the top of them">
-              <h4 class="h43">4WD Club of WA</h4>
-              <p class="para23">Established in 1971, this is one of the largest 4wd clubs in Western Australia, they are family oriented, 
-                cater to all 4wd vehicles, and hold a variety of trips and events.</p>
-              <a href="https://4wdclubwa.com.au/">more</a>
-            </article>
-          
-          <!-- wa coastal 4x4 -->
-            <article class="wacoastal4x4">
-              <img src="images/wacoastal4x4.png" alt="four 4wd cars grouped together in the bush surrounded by trees, powerlines and red dirt">
-              <h4 class="h44">WA Coastal 4x4</h4>
-              <p class="para24">Western Australian 4x4 group planning and holding car meets, beach cruises, day trips and camping trips 
-                through rsvp's on their Facebook page.</p>
-              <a href="https://www.facebook.com/groups/1559125888398666/about">more</a>
+            <!-- out and about section -->
+            <article class="outabout">
+              <img src="images/outnabout4x4club.png" alt="Out and About 4x4 Club photo with multiple four-wheel-drive cars lined up in the red dirt desert">
+              <h4 class="h41">Out and About 4x4 Club Inc.</h4>
+              <p class="para21">20 years old - not a hard core 4wd Club that seeks out the most difficult tracks to conquer, more about 
+                enjoying our four-wheel driving in a safe fun and responsible manner.</p>
+              <sl-button class="morelink" variant="text" size="small" href="https://www.outandabout4x4club.org.au/" target="_blank">more</sl-button> <!-- open the link in a new page -->
             </article>
 
-          <!-- carousel controls (PLACEHOLDERS)-->
-           <nav class="carousel1">
-            <button>BUTTON</button>
-            <button>BUTTON</button>
-           </nav>
-         </section>
+            <!-- south side section -->
+            <article class="southside">
+              <img src="images/southside4wdgroup.png" alt="multiple 4wd cars lined up in the Australian outback with small green shrubs and red gravel ground">
+              <h4 class="h42">South Side 4WD Group</h4>
+              <p class="para22">Social and family oriented club on Facebook posting 4WD news, organizing trips for members and promoting good 4WD practices.</p>
+              <sl-button class="morelink" variant="text" size="small" href="https://www.facebook.com/p/SouthSide-4WD-Group-100070222012763/" target="_blank">more</sl-button>
+            </article>
+            </div>
 
+            <!-- slide two -->
+            <div class="slide">
+
+            <!-- 4wd club of wa-->
+              <article class="4wdclubwa">
+                <img src="images/4wdclubofwa.png" alt="dozens of cars lined up in a semi-circle on a sandy beach, most cares have long sticks pointing up in the air from the bull-bar on the 4wds with little orange flags at the top of them">
+                <h4 class="h43">4WD Club of WA</h4>
+                <p class="para23">Established in 1971, this is one of the largest 4wd clubs in Western Australia, they are family oriented, 
+                  cater to all 4wd vehicles, and hold a variety of trips and events.</p>
+                <sl-button class="morelink" variant="text" size="small" href="https://4wdclubwa.com.au/" target="_blank">more</sl-button>
+              </article>
+            
+            <!-- wa coastal 4x4 -->
+              <article class="wacoastal4x4">
+                <img src="images/wacoastal4x4.png" alt="four 4wd cars grouped together in the bush surrounded by trees, powerlines and red dirt">
+                <h4 class="h44">WA Coastal 4x4</h4>
+                <p class="para24">Western Australian 4x4 group planning and holding car meets, beach cruises, day trips and camping trips 
+                  through rsvp's on their Facebook page.</p>
+                <sl-button class="morelink" variant="text" size="small" href="https://www.facebook.com/groups/1559125888398666/about" target="_blank">more</sl-button>
+              </article>
+            </div>
+          </div>
+
+              <!-- carousel controls -->
+              <div class="carouselcontrols">
+                <button type="button" class="arrowleft"  aria-label="previousslide"><img class="arrowicon" src="images/leftarrow.png" alt=""></button>
+                <div class="dots"></div>
+                <button type="button" class="arrowright" aria-label="nextslide"><img class="arrowicon" src="images/rightarrow.png" alt=""></button>
+              </div>
+
+        </section>
+        
         <!-- ANNUAL FEES -->
-         <section id="annualfees">
+        <section id="annualfees" class="clubcarousel" data-carousel="fees">
           <h3 class="annualfees">Annual fees</h3>
 
-          <!-- freedom awd club wa -->
-          <article class="freedom">
-            <img src="images/freedomawdclub.png" alt="a line of cars going around the bend in a red dirt track with trees lining the sides">
-            <h4 class="h45">Freedom AWD Club WA</h4>
-            <p class="para25">Established in 2012 by three friends from the love of the outdoors and nature, the club is inclusive 
-              of AWD and 4WD vehicles and 
-              participates in varying activities.</p>
-            <a href="https://www.fawdcwa.com.au/">more</a>
-          </article>
+          <!-- carousel 2 begins-->
+          <div class="track">
 
-          <!-- albany 4wd club -->
-          <article class="albany">
-            <img src="images/albany4wdclub.png" alt="a road sign for the northern territory covered in stickers with a 4wd car either side of it on a red dirt road">
-            <h4 class="h46">Albany 4WD Club</h4>
-            <p class="para26">Caters to all types of 4WDs and skill levels with organized training days and trips - insured and 
-              affiliated with WA 4WD Association.</p>
-            <a href="https://albany4wdclub.com/">more</a>
-          </article>
+            <!-- slide one -->
+            <div class="slide">
 
-           <!-- national 4x4 club of australia-->
-           <article class="national4x4">
-            <img src="images/national4x4clubofaus.png" alt="multiple 4wd cars lined up on red dirt amongst green grassy hills">
-            <h4 class="h43">National 4x4 Club of Australia</h4>
-            <p class="para23">Registered club with members across the country promoting responsible 4wd activities, they are 
-              family friendly, and hold regular 
-              events and trips that vary in length, skill and theme.</p>
-            <a href="https://national4x4.com.au/">more</a>
-          </article>
-        
-        <!-- cockburn 4wd club -->
-          <article class="cockburn4wdclub">
-            <img src="images/cockburn4wdclub.png" alt="five 4wds lined up around the bend of a tight dirt track in a forrest">
-            <h4 class="h44">Cockburn 4wd Club</h4>
-            <p class="para24">Family friendly club planning trips for groups of people with similar vehicles and interests, 
-              members do not need to be from Cockburn to join.</p>
-            <a href="https://www.cockburn4wdclub.org.au/home">more</a>
-          </article>
+            <!-- freedom awd club wa -->
+            <article class="freedom">
+              <img src="images/freedomawdclub.png" alt="a line of cars going around the bend in a red dirt track with trees lining the sides">
+              <h4 class="h45">Freedom AWD Club WA</h4>
+              <p class="para25">Established in 2012 by three friends from the love of the outdoors and nature, the club is inclusive 
+                of AWD and 4WD vehicles and 
+                participates in varying activities.</p>
+              <sl-button class="morelink" variant="text" size="small" href="https://www.fawdcwa.com.au/" target="_blank">more</sl-button>
+            </article>
 
-          <!-- carousel controls (PLACEHOLDER) -->
-           <nav class="carousel2">
-            <button>BUTTON</button>
-            <button>BUTTON</button>
-           </nav>
-         </section>
+            <!-- albany 4wd club -->
+            <article class="albany">
+              <img src="images/albany4wdclub.png" alt="a road sign for the northern territory covered in stickers with a 4wd car either side of it on a red dirt road">
+              <h4 class="h46">Albany 4WD Club</h4>
+              <p class="para26">Caters to all types of 4WDs and skill levels with organized training days and trips - insured and 
+                affiliated with WA 4WD Association.</p>
+              <sl-button class="morelink" variant="text" size="small" href="https://albany4wdclub.com/" target="_blank">more</sl-button>
+            </article>
+            </div>
 
+            <!-- slide two -->
+            <div class="slide">
+
+            <!-- national 4x4 club of australia-->
+            <article class="national4x4">
+              <img src="images/national4x4clubofaus.png" alt="multiple 4wd cars lined up on red dirt amongst green grassy hills">
+              <h4 class="h43">National 4x4 Club of Australia</h4>
+              <p class="para23">Registered club with members across the country promoting responsible 4wd activities, they are 
+                family friendly, and hold regular 
+                events and trips that vary in length, skill and theme.</p>
+                <sl-button class="morelink" variant="text" size="small" href="https://national4x4.com.au/" target="_blank">more</sl-button>
+            </article>
+          
+            <!-- cockburn 4wd club -->
+            <article class="cockburn4wdclub">
+              <img src="images/cockburn4wdclub.png" alt="five 4wds lined up around the bend of a tight dirt track in a forrest">
+              <h4 class="h44">Cockburn 4wd Club</h4>
+              <p class="para24">Family friendly club planning trips for groups of people with similar vehicles and interests, 
+                members do not need to be from Cockburn to join.</p>
+              <sl-button class="morelink" variant="text" size="small" href="https://www.cockburn4wdclub.org.au/home" target="_blank">more</sl-button>
+            </article>
+            </div>
+          </div>
+
+          <!-- carousel controls -->
+          <div class="carouselcontrols">
+            <button type="button" class="arrowleft"  aria-label="previousslide"><img class="arrowicon" src="images/leftarrow.png" alt=""></button>
+            <div class="dots"></div>
+            <button type="button" class="arrowright" aria-label="nextslide"><img class="arrowicon" src="images/rightarrow.png" alt=""></button>
+          </div>
+        </section>
       </section>
 
       <!-- ***** TIPS 'N TRICKS ***** -->
-      <section id="tipsntricks" class="fullbleed">
+      <section id="tipsntricks">
         <!-- title -->
         <h2 class="tipsntricks">Tips 'n tricks</h2>
         <p class="tipsblurb">With such a large population in this hobby there are bound to be a few bad actors, but with good ones 
@@ -420,83 +447,90 @@
       
         <!-- content -->
         <!-- ESSENTIALS -->
-        <section class="essentials">
-          <sl-carousel pagination navigation loop> <!-- shoelace carousel -->
-
+        <section class="carousel-section"> <!-- carousel container -->
+          <div class="carousel"> <!-- scrollable carousel wrapper -->
           <!-- slide one -->
-          <sl-carousel-item> <!-- shoelace carousel individual items -->
             <div class="slide" style="background-image: url(images/ca1.png);">
                 <h3 class="slidetitle">Essentials</h3>
-                <div class="tagbox1a">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon1a">
-                  <a href="https://www.elitetune.com.au/guide-to-prepare-your-4x4-for-an-off-road-trip/" class="infolink1a">What to do before a trip</a>
+                <div class="tagbox"> <!-- clickable tagbox link -->
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://www.elitetune.com.au/guide-to-prepare-your-4x4-for-an-off-road-trip/" class="infolink">What to do before a trip</a>
                 </div>
             </div>
-          </sl-carousel-item>
 
           <!-- slide two -->
-          <sl-carousel-item>
             <div class="slide" style="background-image: url(images/must-haves.png);"> 
                 <h3 class="slidetitle">Essentials</h3>
-                <div class="tagbox2a">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon2a">
-                  <a href="https://roughasguts.com.au/guides/4wd-packing-list/" class="infolink2a">Must-haves on your packing list</a>
+                <div class="tagbox">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://roughasguts.com.au/guides/4wd-packing-list/" class="infolink">Must-haves on your packing list</a>
                 </div>
             </div>
-          </sl-carousel-item>
 
           <!-- slide three-->
-          <sl-carousel-item>
             <div class="slide" style="background-image: url(images/4wdlesson.png);">
                 <h3 class="slidetitle">Essentials</h3>
-                <div class="tagbox3a">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon3a">
-                  <a href="https://total4x4.com.au/4wd-training-course/" class="infolink3a">Why you should complete a 4wding course</a>
+                <div class="tagbox">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://total4x4.com.au/4wd-training-course/" class="infolink">Why you should complete a 4wding course</a>
                 </div>
             </div>
-          </sl-carousel-item>
+          </div>
 
-          </sl-carousel>
+          <!-- arrows -->
+          <button class="arrow-left">❮</button>
+          <button class="arrow-right">❯</button>
+
+          <!-- dots -->
+           <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+           </div>
         </section>
 
         <!-- TIPS N TRICKS-->
-        <section class="tipsntricksslider">
-          <sl-carousel pagination navigation loop> <!-- shoelace carousel -->
+        <section class="carousel-section">
+          <div class="carousel">
            
           <!-- slide one -->
-          <sl-carousel-item> <!-- shoelace carousel individual item -->
             <div class="slide" style="background-image: url(images/cb1.png);">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
-                <div class="tagbox1b">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon1b">
-                  <a href="https://www.youtube.com/watch?v=HJdaZd9WX3Y" class="infolink1b">How to never get bogged</a>
+                <div class="tagbox">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://www.youtube.com/watch?v=HJdaZd9WX3Y" class="infolink">How to never get bogged</a>
                 </div>
             </div>
-          </sl-carousel-item>
 
           <!-- slide two -->
-          <sl-carousel-item>
             <div class="slide" style="background-image: url(images/bellswhistles.png);">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
-                <div class="tagbox2b">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon2b">
-                  <a href="https://mr4x4.com.au/essential-4x4-mods-and-camping-gear-you-actually-need/" class="infolink2b">You don't need all the bells and whistles</a>
+                <div class="tagbox">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://mr4x4.com.au/essential-4x4-mods-and-camping-gear-you-actually-need/" class="infolink">You don't need all the bells and whistles</a>
                 </div>
             </div>
-          </sl-carousel-item>
           
           <!-- slide three-->
-          <sl-carousel-item>
             <div class="slide" style="background-image: url(images/buddysystem.png);">
                 <h3 class="slidetitle">Tips 'n tricks</h3>
-                <div class="tagbox3b">
-                  <img src="images/more.png" alt="plus icon in box" class="plusicon3b">
-                  <a href="https://www.snowys.com.au/blog/convoy-etiquette-and-safety-when-4wding/" class="infolink3b">Why buddy systems work</a>
+                <div class="tagbox">
+                  <img src="images/more.png" alt="plus icon in box" class="plusicon">
+                  <a href="https://www.snowys.com.au/blog/convoy-etiquette-and-safety-when-4wding/" class="infolink">Why buddy systems work</a>
                 </div>
             </div>
-          </sl-carousel-item>
-        
-          </sl-carousel>
+          </div>
+
+           <!-- arrows -->
+           <button class="arrow-left">❮</button>
+           <button class="arrow-right">❯</button>
+
+          <!-- dots -->
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+           </div>
         </section>
 
       </section>
@@ -511,7 +545,7 @@
         <div class="searchcontainer">
           
           <form role="search">
-            <label for="search" class="hidden">Search Questions</label>
+            <label for="search" class="hidden"></label>
             <input
             type="search"
             id="search"
@@ -597,8 +631,21 @@
     <img src="images/up-arrow.png" alt="arrow pointing up that leads back to the top of the page">
   </a>
 
+  <!-- shoelace alert -->
+   <div class="alert-toast">
+    <sl-alert id="clubAlert" variant="success" duration="2000" closable>
+      <sl-icon slot="icon" name="check2-circle"></sl-icon>
+      <strong>Opening club website...</strong>
+    </sl-alert>
+   </div>
+   
+
   <!-- script -->
-    <!-- showlace component Javascript -->
+  <!-- GSAP script -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script>document.documentElement.classList.add('js');</script> <!-- CSS hides hides if JS is loaded-->
+  <!-- showlace component Javascript -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script> 
   <script src="main.js"></script> <!-- this must be the last script for things to work -->
 
