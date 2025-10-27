@@ -1431,8 +1431,6 @@ html, body { /* stops horizontal scrollbar */
     height: auto;
     max-width: 100%;
   }
-  [class^="content"] [class^="img"] {
-  }
   [class^="content"] [class^="img"] img {
     width: 100%;
     height: auto;
@@ -1594,6 +1592,13 @@ html, body { /* stops horizontal scrollbar */
   }
 
   /* FAQ GRID */
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0);
+    white-space: nowrap; border: 0;
+  }
   .faqgrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 across */
