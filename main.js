@@ -167,12 +167,18 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.utils.toArray(".faqcard").forEach((card) => {
-    gsap.to(card, {
-      scrollTrigger: card, // animation begins when this card enters viewport
-      opacity: 1,
-      y: -30,
-      duration: 0.8,
+    gsap.from(card, {
+      opacity: 0,
+      y: 30, // start 30px lower
+      duration: 0.6,
       ease: "power2.out",
+      scrollTrigger: {
+        trigger: card, // each card triggers its own animation
+        start: "top 85%", // when card nears viewport
+        markers: false, // for testing *****
+      },
     });
   });
 });
+
+// SVG animations
