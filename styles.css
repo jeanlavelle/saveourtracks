@@ -1371,11 +1371,14 @@ html, body { /* stops horizontal scrollbar */
   #backstory, #actions, #danger, #howtohelp {
     scroll-margin-top: 120px;
   }
+  :root { /* target all content rows and columns */
+    --colGap768: 20px;
+  }
 
   /* header and nav */
   nav {
-    padding: 14px 10px;
-    gap: 10px;
+    padding-bottom: 0px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -1389,13 +1392,13 @@ html, body { /* stops horizontal scrollbar */
     padding: 8px 6px;
   }
   .progress-container {
-    top: 82px !important;
+    top: 90px !important;
     z-index: 999;
   }
 
   /* home */
   #home {
-    margin-top: 120px !important; /* room for fixed header */
+    margin-top: 20px !important; /* room for fixed header */
     background-position: 50% 65%; /* show more focal area */
   }
   #home h1, #home .title, #home .titletwo {
@@ -1411,26 +1414,31 @@ html, body { /* stops horizontal scrollbar */
   }
 
   /* text */
-  .text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13 {
-    width: 55%; /* making sure it doesn't stretch full screen */
-    line-height: 1.65;
-    min-width: 0;
-    flex: 1 1 55%;
-    overflow-wrap: anywhere;
+  [class^="content"] [class^="text"] {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   /* images */
-  .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13 {
-    width: 42%; /* limiting image width */
-    min-width: 42%; /* prevent collapsing */
-    flex: 0 0 42%; /* prevent shrink */
-  }
   .img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img, .img9 img, .img10 img, .img11 img, .img12 img, .img13  img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: inherit;
     max-width: 100%;
+  }
+  img { /* make any left out images fluid (like the carousels and cards) */
+    height: auto;
+    max-width: 100%;
+  }
+  [class^="content"] [class^="img"] {
+  }
+  [class^="content"] [class^="img"] img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
   }
 
   /* section titles */
@@ -1440,23 +1448,42 @@ html, body { /* stops horizontal scrollbar */
   }
 
   /* content */
-  .content1,  .content2,  .content3,  .content4,  .content5,  .content6,  .content7,  .content8,  .content9,  .content10,  .content11,  .content12,  .content13 {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: 14px;
-    margin-bottom: 48px;
-    flex-wrap: nowrap;
+  [class^="content"] { /* 2 column grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50/50 columns */
+    gap: var(--colGap768);
+    align-items: start;
+    margin-bottom: 48px; /* keeps spacing between rows */
   }
 
-  /* images */
-  img { /* make any left out images fluid (like the carousels and cards) */
-    height: auto;
-    max-width: 100%;
+  /* alternate order of text and image */
+  [class^="content"] [class^="text"] {
+    order: 1;
+  }
+  [class^="content"] [class^="img"] { 
+    order: 2;
+  }
+  #backstory [class^="content"]:nth-child(even) [class^="text"], #actions [class^="content"]:nth-child(even) [class^="text"], 
+  #danger [class^="content"]:nth-child(even) [class^="text"], #howtohelp [class^="content"]:nth-child(even) [class^="text"] {
+    order: 2;
+  }
+  #backstory [class^="content"]:nth-child(even) [class^="img"], #actions [class^="content"]:nth-child(even) [class^="img"], 
+  #danger [class^="content"]:nth-child(even) [class^="img"], #howtohelp [class^="content"]:nth-child(even) [class^="img"] {
+    order: 1;
   }
 
+  /* lists and paragraphs */
+  #backstory p, #backstory li, #actions p, #actions li, #danger p, #danger li, #howtohelp p, #howtohelp li {
+    word-break: normal;
+    overflow-wrap: anywhere; /* stops words coming out of layout */
+    hyphens: auto;
+  }
+
+  /* BACKSTORY */
+  #backstory [class^="text"] p, #backstory [class^="text"] li, #backstory [class^="text"] p span {
+    font-size: 14px !important;
+    line-height: 1.6;
+  }
   /* HOW TO HELP */
   #howtohelp {
     padding-top: 140px !important;
@@ -1595,7 +1622,5 @@ html, body { /* stops horizontal scrollbar */
     font-size: 15px;
     margin-left: 18px;
   }
-  #danger ul, #actions ul {
-    width: 55%;
-  }
+
 }
